@@ -262,8 +262,20 @@ div label{
   }
 }
 
+/*-----MQ ablet -----*/
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  ul {
+    margin-top: 2rem;
+  }
+}
+
 /*----- MQ desktop ----- */
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 601px) {
   .header {
     flex-direction: row;
     justify-content: space-between;
