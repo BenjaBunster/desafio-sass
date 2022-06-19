@@ -1,93 +1,28 @@
-
-/* RESET */
 * {
-  box-sizing: border-box;
-  overflow: auto;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serifß;
-  padding: 0;
   margin: 0;
-}
+  padding: 0;
+  box-sizing: 0; }
 
-
-
-/* ESTRUCTURA GRID */
-
+/*grid padre*/
 .page-grid {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 1fr;
-  grid-template-areas:
-    'header'
-    'content'
-    'sidebar'
-    'footer';
-}
-
+  grid-template-areas: "header" "content" "sidebar" "footer"; }
 
 .page-grid-contacto {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 1fr;
-  grid-template-areas:
-    'header'
-    'content'
-    'footer';
-}
+  grid-template-areas: 'header' 'content' 'footer'; }
 
 /*MEDIE QUERIES DEKSTOP*/
 @media screen and (min-width: 600px) {
   .page-grid {
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas:
-      'header header header'
-      'content content sidebar'
-      'footer footer footer';
-    
-  }
+    grid-template-areas: 'header header header' 'content content sidebar' 'footer footer footer'; } }
 
-  .page-grid-contacto {
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas:
-      'header header header'
-      'content content content'
-      'footer footer footer';
-  }
-}
-
-.header {
-  grid-area: header;
-  align-items: center;
-}
-
-nav ul {
-  display: flex;
-}
-
-nav ul li {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  list-style: none;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-.footer {
-  grid-area: footer;
-
-}
-
-.nav {
-  grid-area: nav;
-}
-
-.sidebar-grid {
-  grid-area: sidebar;
-}
-/* ESTRUCTURA GRID */
-
+/*estructura grid*/
 .sidebar-grid ul {
   display: flex;
   flex-direction: column;
@@ -96,67 +31,75 @@ nav ul li a {
   list-style: none;
   padding: 1.5rem;
   margin: 0.5rem;
-  text-align: left;
-  
-}
+  text-align: left; }
 
 .sidebar-grid ul li {
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 .content {
   grid-area: content;
-  min-height: 80vh;
-}
+  min-height: 80vh; }
 
-header h1{
- margin-bottom: 1rem;
- text-shadow: 2px 3px rgb(165, 123, 68);
- font-size: 2.5rem; 
- text-transform: uppercase;
- font-family: 'Times New Roman', Times, serif;
- font-weight: bolder;
-}
+.footer {
+  grid-area: footer; }
 
-/* ANIMACION EN INDEX*/
+.nav {
+  grid-area: nav; }
 
-header h1:hover{
+/*HEADER*/
+header {
+  grid-area: header;
+  align-items: center; }
+  header h1 {
+    margin-bottom: 1rem;
+    text-shadow: 2px 3px #a57b44;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder; }
+  header nav ul {
+    display: flex; }
+    header nav ul li {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      list-style: none; }
+      header nav ul li a {
+        text-decoration: none;
+        color: white; }
+
+/* ANIMACIONES */
+header h1:hover {
   background-color: #c6aa859c;
   font-size: 41px;
   box-shadow: 5px 5px;
-  border-radius: 80px;
-  
-}
-nav ul li:hover{
-  font-size: 18px;
-}
+  border-radius: 80px; }
 
+nav ul li:hover {
+  font-size: 18px; }
 
-/* imagen de sección content */
+/* IMAGEN DE SECCION CONTENT */
 .image-content-wrapper {
   border-radius: 40px;
   position: relative;
   max-height: 500px;
-  overflow: hidden;
-}
+  overflow: hidden; }
+
 .image-text {
   text-align: left;
   font-size: 1.5rem;
   position: absolute;
   top: 0;
   padding: 15px;
-  color: rgb(88, 70, 47);
-}
+  color: #58462f; }
+
 .content-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
+  object-fit: cover; }
 
 .page-grid {
   margin: 1em;
-  background-color: #FFF;
-}
+  background-color: #FFF; }
 
 .grid-item {
   display: flex;
@@ -165,28 +108,35 @@ nav ul li:hover{
   padding: 20px;
   font-size: 100%;
   background-color: #e3caab;
-  border-radius: 5px;
-}
+  border-radius: 5px; }
 
-.header, 
-.footer{
-  background-color: #d4a66a;
-}
+.header,
+.footer {
+  background-color: #d4a66a; }
 
 .sidebar-grid {
-  background-color: #e3caab;
-}
+  background-color: #e3caab; }
 
 .content h2 {
-  margin-top: 0; 
-  margin-bottom: 0.8rem;
-  font-size: 1.8rem;
-}
-.content p{
-  margin-top: 0; 
-  margin-bottom: 0.8rem;
-  font-size: 1rem;
-}
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem; }
+
+/* FOOTER */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem; }
+
+.footer-logo-container {
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  transform: scale(1.5); }
+
+.footer-logo-container img {
+  object-fit: cover;
+  height: 100%; }
 
 /*PRODUCTOS*/
 table, th, th, td {
@@ -194,93 +144,62 @@ table, th, th, td {
   width: 800px;
   height: 50px;
   margin: 30px;
-  background-color: rgba(214, 161, 130, 0.589);
-  }
+  background-color: rgba(214, 161, 130, 0.589); }
 
-.productos-lista{
+.productos-lista {
   display: flex;
   justify-content: center;
   width: 75%;
   height: 75%;
-  color: rgb(206, 28, 28);
-  background-color: rgb(225, 170, 30);
-}
+  color: #761616;
+  background-color: #92701a; }
 
 /* contacto css */
-legend{
+legend {
   text-align: center;
-  font-size: 1.5rem;
-}
+  font-size: 1.5rem; }
+
 section {
   display: flexbox;
   row-gap: gap;
-  padding: 3rem;  
-}
-fieldset{
-  padding: 1.5rem;
+  padding: 3rem; }
 
-}
-section div{
-  margin: 1rem;
-}
-.contacto-comentario input{
+fieldset {
+  padding: 1.5rem; }
+
+section div {
+  margin: 1rem; }
+
+.contacto-comentario input {
   width: 300px;
-  height: 50px;
-}
-div label{
+  height: 50px; }
+
+div label {
   padding-right: 70px;
   font-size: large;
-  text-align: center;
- }
-
-
-/* FOOTER */
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 1rem;
-  
-}
-
-
-.footer-logo-container {
-  height: 100px;
-  width: 100px;
-  overflow: hidden;
-  transform: scale(1.5);
-}
-
-.footer-logo-container img {
-  object-fit: cover;
-  height: 100%;
-}
-/* FOOTER */
+  text-align: center; }
 
 /*-----MQ MOBILE ----- aqui va el css de MOBILE*/
 @media screen and (max-width: 480px) {
   .header {
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
+    justify-content: center;
+    align-items: center; }
+  ul {
+    margin-top: 2rem; } }
 
-/*-----MQ ablet -----*/
+/*-----MQ tablet -----*/
 @media screen and (max-width: 600px) {
   .header {
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
+    justify-content: center;
+    align-items: center; }
+  ul {
+    margin-top: 2rem; } }
 
 /*----- MQ desktop ----- */
 @media screen and (min-width: 601px) {
   .header {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-  }
-
-}
+    align-items: center; } }
