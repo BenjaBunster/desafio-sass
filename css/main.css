@@ -188,13 +188,25 @@ div label {
 .quienes-somos {
   display: flex;
   flex-direction: row;
-  padding-top: 2rem; }
+  padding: 2rem; }
+  .quienes-somos h2 {
+    text-align: center;
+    border-style: solid;
+    background-color: #b69340;
+    color: white; }
+  .quienes-somos p {
+    text-align: center;
+    padding-bottom: 1rem; }
   .quienes-somos .somos1 {
     flex: 50%;
-    padding-right: 2rem; }
+    padding: 2rem;
+    margin: 2rem;
+    border-style: dotted; }
   .quienes-somos .somos2 {
     flex: 50%;
-    padding-right: 2rem; }
+    padding: 2rem;
+    margin: 2rem;
+    border-style: dotted; }
 
 /*-----MQ MOBILE ----- aqui va el css de MOBILE*/
 @media screen and (max-width: 480px) {
