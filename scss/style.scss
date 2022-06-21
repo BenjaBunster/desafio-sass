@@ -140,11 +140,6 @@ nav ul li:hover{
   border-radius: 5px;
 }
 
-.header, 
-.footer{
-  background-color: #d4a66a;
-}
-
 .sidebar-grid {
   background-color: #e3caab;
 }
@@ -173,6 +168,10 @@ nav ul li:hover{
 .footer-logo-container img {
   object-fit: cover;
   height: 100%;
+}
+.header, 
+.footer{
+  background-color: #d4a66a;
 }
 
 /*PRODUCTOS*/
@@ -220,15 +219,36 @@ div label{
   text-align: center;
  }
 
+ /* QUIENES SOMOS*/
+
+.titulo-somos{
+ font-size: 70px;
+ text-align: center;
+ padding: 2rem;
+} 
+
+ .quienes-somos{
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  
+  .somos1{
+    flex: 50%;
+    padding-right: 2rem;
+  }
+  .somos2{
+    flex: 50%;
+    padding-right: 2rem;
+  }
+  
+ }
+
  /*-----MQ MOBILE ----- aqui va el css de MOBILE*/
  @media screen and (max-width: 480px) {
   .header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  ul {
-    margin-top: 2rem;
   }
 }
 
@@ -239,9 +259,7 @@ div label{
     justify-content: center;
     align-items: center;
   }
-  ul {
-    margin-top: 2rem;
-  }
+
 }
 
 /*----- MQ desktop ----- */
