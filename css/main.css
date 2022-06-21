@@ -122,7 +122,9 @@ nav ul li:hover {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  margin-left: 1rem; }
+  margin-left: 1rem;
+  overflow: auto;
+  flex-wrap: nowrap; }
 
 .footer-logo-container {
   height: 100px;
@@ -180,15 +182,19 @@ div label {
   text-align: center; }
 
 /* QUIENES SOMOS*/
+.titulo-somos :hover {
+  font-size: 52px; }
+
 .titulo-somos {
-  font-size: 70px;
+  font-size: 50px;
   text-align: center;
   padding: 2rem; }
 
 .quienes-somos {
   display: flex;
   flex-direction: row;
-  padding: 2rem; }
+  padding: 2rem;
+  overflow: auto; }
   .quienes-somos h2 {
     text-align: center;
     border-style: solid;
