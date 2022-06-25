@@ -34,73 +34,86 @@
     </nav>
 </header>
 
-<main class="productos-main">
-<div class="grid-item content">
-    <div>
- <!-- carrusel bootstrap -->
- <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel" >
-    <div class="carousel-inner ">
-      <div class="carousel-item active ">
-        <img src="../imagen/carusel/nuez2.jpg" class="d-block w-50" alt="foto de nuez">
-      </div>
-      <div class="carousel-item ">
-        <img src="../imagen/inicio2.jpeg" class="d-block w-50 " alt="foto de frutos">
-      </div>
-      <div class="carousel-item">
-        <img src="../imagen/carusel/pistachos.jpg" class="d-block w-50" alt="foto de pistachos">
+<main class="grid-item content">
+ <!-- card bootstrap -->
+ <div class="row row-cols-1 row-cols-md-3 g-4">
+    
+    <div class="col">
+      <div class="card">
+        <img src="../imagen/cards/caju.png" class="card-img-top" alt="img castañas cahu">
+        <div class="card-body">
+          <h5 class="card-title">Castañas de caju</h5>
+          <p class="card-text">Ricos en magnesio y vitaminas, los anacardos ayudan a prevenir la fatiga. Ayuda a combatir el estrés, a reducir la presión arterial y a facilitar el sueño.</p>
+        </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <div class="col">
+      <div class="card">
+        <img src="../imagen/cards/almendra.png" class="card-img-top" alt="imagen Almendras">
+        <div class="card-body">
+          <h5 class="card-title">Almendras</h5>
+          <p class="card-text">Un puñado de almendras contiene el 37% de la cantidad diaria de vitamina E recomendada. Sirven para ganar masa muscular y recargar energía</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../imagen/cards/pistachos.jpg" class="card-img-top" alt="imagen pistachos">
+        <div class="card-body">
+          <h5 class="card-title">Pistachos</h5>
+          <p class="card-text">Los pistachos son ricos en antioxidantes, como el betacaroteno, la luteína. Y algunos de los beneficios son la ralentización o prevención de algunas enfermedades cardiovasculares</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../imagen/cards/Nuez.jpg" class="card-img-top" alt="imagen producto nuez">
+        <div class="card-body">
+          <h5 class="card-title">Nuez</h5>
+          <p class="card-text">Ricas en Omega 3. En 25 gramos, las nueces llegan a proporcionar más del 90% de las necesidades diarias de ácidos grasos omega 3.</p>
+        </div>
+      </div>
+      
+    </div>
   </div>
+ 
 
   <!--LISTA -->
+  <div  class="productos-lista">
   <h2>Productos</h2>
-  <div>
-      <table class="productos-lista">
+      <table>
           <tr>
-              <th>producto</th>
-              <th>precios</th>
-              <th>cantidas</th>
+              <th>Producto</th>
+              <th>Precios</th>
+              <th>Cantidas</th>
           </tr>
           <tr>
-              <td>pistachos</td>
-              <td>10990</td>
-              <td>1kg</td>
-          </tr>
-          <tr>
+            <td>Nuez</td>
+            <td>$12.990</td>
+            <td>1kg</td>
+        </tr>
+        <tr>
               <td>Almendras</td>
-              <td>12990</td>
+              <td>$12.990</td>
               <td>1kg</td>
           </tr>
+          
           <tr>
-              <td>Coco</td>
-              <td>6990</td>
-              <td>1kg</td>
-          </tr>
+            <td>Pistachos</td>
+            <td>$16.990</td>
+            <td>1kg</td>
+        </tr>
+        
           <tr>
-              <td>Sem. Maravilla</td>
-              <td>8990</td>
-              <td>1kg</td>
-          </tr>
-          <tr>
-              <td>NUez</td>
-              <td>16990</td>
+              <td>Catañas de caju</td>
+              <td>$18.990</td>
               <td>1kg</td>
           </tr>
       </table>
-  </div>
-    </div>
-  </div>
-   
- 
-
+      <div class="comprar">
+        <button><a href="../paginas/contacto.html"> Comprar aqui </a></button>
+      </div>
+     </div>
 </main>
             <!-- footer -->
             <footer class="grid-item footer">

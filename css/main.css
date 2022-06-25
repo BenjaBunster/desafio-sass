@@ -134,18 +134,27 @@ nav ul li:hover {
 /*PRODUCTOS*/
 table, th, th, td {
   border: 1px solid black;
+  text-align: center;
   width: 800px;
   height: 50px;
-  margin: 30px;
-  background-color: rgba(214, 161, 130, 0.589); }
+  background-color: white; }
 
 .productos-lista {
-  display: flex;
-  justify-content: center;
-  width: 75%;
-  height: 75%;
-  color: #761616;
-  background-color: #92701a; }
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+  color: #0e0a0a;
+  text-align: center; }
+  .productos-lista table {
+    margin: 0% auto; }
+  .productos-lista .comprar {
+    margin: 1rem; }
+    .productos-lista .comprar button {
+      background-color: #d1a4697b; }
+    .productos-lista .comprar a {
+      padding: 0.5rem;
+      color: #2b00ff;
+      text-decoration: none; }
 
 /* contacto css */
 legend {
