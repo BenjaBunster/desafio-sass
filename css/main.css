@@ -4,9 +4,10 @@
   box-sizing: 0; }
 
 /*grid padre*/
+/*estructura grid*/
 .page-grid {
   display: grid;
-  grid-gap: 1em;
+  background-color: #FFF;
   grid-template-columns: 1fr;
   grid-template-areas: "header" "content" "sidebar" "footer"; }
 
@@ -16,25 +17,10 @@
   grid-template-columns: 1fr;
   grid-template-areas: 'header' 'content' 'footer'; }
 
-/*MEDIE QUERIES DEKSTOP*/
 @media screen and (min-width: 600px) {
   .page-grid {
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 'header header header' 'content content sidebar' 'footer footer footer'; } }
-
-/*estructura grid*/
-.sidebar-grid ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 100%;
-  list-style: none;
-  padding: 1.5rem;
-  margin: 0.5rem;
-  text-align: left; }
-
-.sidebar-grid ul li {
-  font-size: 14px; }
 
 .content {
   grid-area: content;
@@ -43,8 +29,21 @@
 .footer {
   grid-area: footer; }
 
-.nav {
-  grid-area: nav; }
+/* SIDEBAR */
+.sidebar-grid {
+  background-color: #e3caab;
+  margin-left: 1rem; }
+  .sidebar-grid ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    list-style: none;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    text-align: left; }
+    .sidebar-grid ul li {
+      font-size: 14px; }
 
 /*HEADER*/
 header {
@@ -97,10 +96,6 @@ nav ul li:hover {
   height: 100%;
   object-fit: cover; }
 
-.page-grid {
-  margin: 1em;
-  background-color: #FFF; }
-
 .grid-item {
   display: flex;
   flex-direction: column;
@@ -109,9 +104,6 @@ nav ul li:hover {
   font-size: 100%;
   background-color: #e3caab;
   border-radius: 5px; }
-
-.sidebar-grid {
-  background-color: #e3caab; }
 
 .content h2 {
   margin-top: 0;
@@ -123,7 +115,6 @@ nav ul li:hover {
   display: flex;
   justify-content: space-between;
   margin-left: 1rem;
-  overflow: auto;
   flex-wrap: nowrap; }
 
 .footer-logo-container {
@@ -226,7 +217,10 @@ div label {
   .header {
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  .sidebar-grid {
+    margin-left: 0%;
+    margin-top: 0.5rem; } }
 
 /*----- MQ desktop ----- */
 @media screen and (min-width: 601px) {
