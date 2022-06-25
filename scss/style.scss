@@ -181,14 +181,14 @@ table, th, th, td {
   }
 
 .productos-lista{
-  width: 100%;
-  height: 100%;
   margin-top: 2rem;
   color: rgb(14, 10, 10);
   text-align: center;
 
   table{
     margin: 0% auto;
+    width: 100%;
+    overflow: scroll;
   }
   .comprar{
     margin: 1rem;
