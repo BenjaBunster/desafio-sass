@@ -17,7 +17,7 @@
   grid-template-columns: 1fr;
   grid-template-areas: 'header' 'content' 'footer'; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 801px) {
   .page-grid {
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 'header header header' 'content content sidebar' 'footer footer footer'; } }
@@ -32,7 +32,8 @@
 /* SIDEBAR */
 .sidebar-grid {
   background-color: #e3caab;
-  margin-left: 1rem; }
+  margin-left: 1rem;
+  font-family: "Courier New", Courier, monospace; }
   .sidebar-grid ul {
     display: flex;
     flex-direction: column;
@@ -50,8 +51,13 @@ header {
   grid-area: header;
   align-items: center; }
   header h1 {
+    margin-bottom: 1rem; }
+  header h1 a {
+    font-family: "Courier New", Courier, monospace;
+    text-decoration: none;
+    color: black;
     margin-bottom: 1rem;
-    text-shadow: 2px 3px #a57b44;
+    text-shadow: 2px 3px #e3caab;
     font-size: 2.5rem;
     text-transform: uppercase;
     font-family: 'Times New Roman', Times, serif;
@@ -61,22 +67,23 @@ header {
     header nav ul li {
       padding-left: 1rem;
       padding-right: 1rem;
-      list-style: none; }
+      list-style: none;
+      font-family: "Courier New", Courier, monospace; }
       header nav ul li a {
         text-decoration: none;
         color: white; }
 
 /* ANIMACIONES */
-header h1:hover {
-  background-color: #c6aa859c;
-  font-size: 41px;
+header h1 a:hover {
+  background-color: #e3caab;
+  font-size: 38px;
   box-shadow: 5px 5px;
   border-radius: 80px; }
 
 nav ul li:hover {
-  font-size: 18px; }
+  font-size: 17px; }
 
-/* IMAGEN DE SECCION CONTENT */
+/* VIDA SANA   -   IMAGEN DE SECCION CONTENT */
 .image-content-wrapper {
   border-radius: 40px;
   position: relative;
@@ -84,12 +91,12 @@ nav ul li:hover {
   overflow: hidden; }
 
 .image-text {
-  text-align: left;
   font-size: 1.5rem;
   position: absolute;
   top: 0;
   padding: 15px;
-  color: #58462f; }
+  color: #442c1c;
+  background-color: rgba(73, 51, 24, 0.151); }
 
 .content-img {
   width: 100%;
@@ -106,15 +113,45 @@ nav ul li:hover {
   border-radius: 5px; }
 
 .content h2 {
+  font-family: "Courier New", Courier, monospace;
+  color: #442c1c;
   margin-top: 0;
   margin-bottom: 1.5rem;
-  font-size: 1.8rem; }
+  font-size: 2.5rem; }
+
+.content p {
+  font-family: "Courier New", Courier, monospace; }
+
+.p-1 {
+  flex: 50%;
+  padding: 2rem;
+  margin: 2rem;
+  border-style: groove; }
+  .p-1 mark {
+    background-color: #ba8403; }
+
+.p-2 {
+  flex: 50%;
+  padding: 2rem;
+  margin: 2rem;
+  border-style: groove; }
+  .p-2 mark {
+    background-color: #ba8403; }
+
+.p-3 {
+  flex: 50%;
+  padding: 2rem;
+  margin: 2rem;
+  border-style: groove; }
+  .p-3 mark {
+    background-color: #ba8403; }
 
 /* FOOTER */
 .footer-container {
   display: flex;
   justify-content: space-between;
   margin-left: 1rem;
+  font-family: "Courier New", Courier, monospace;
   flex-wrap: nowrap; }
 
 .footer-logo-container {
@@ -141,7 +178,7 @@ table, th, th, td {
 
 .productos-lista {
   margin-top: 2rem;
-  color: #0e0a0a;
+  color: black;
   text-align: center; }
   .productos-lista table {
     margin: 0% auto;
@@ -150,10 +187,10 @@ table, th, th, td {
   .productos-lista .comprar {
     margin: 1rem; }
     .productos-lista .comprar button {
-      background-color: #d1a4697b; }
+      background-color: #d4a66a; }
     .productos-lista .comprar a {
       padding: 0.5rem;
-      color: #2b00ff;
+      color: #442c1c;
       text-decoration: none; }
 
 /* contacto css */
@@ -222,18 +259,24 @@ div label {
     align-items: center; } }
 
 /*-----MQ tablet -----*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .header {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
   .sidebar-grid {
     margin-left: 0%;
-    margin-top: 0.5rem; } }
+    margin-top: 0.5rem; }
+  .quienes-somos {
+    display: flex;
+    flex-direction: column; } }
 
 /*----- MQ desktop ----- */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 801px) {
   .header {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; } }
+    align-items: center; }
+  .sidebar-grid {
+    background-color: #e3caab;
+    margin-left: 1rem; } }

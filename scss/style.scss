@@ -5,6 +5,10 @@
     box-sizing: 0;
 }
 
+// VARIABLES 
+@import "utilities/variables";
+
+
 /*grid padre*/ /*estructura grid*/
 
 .page-grid{
@@ -27,7 +31,7 @@
       'footer';
   }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 801px) {
     .page-grid {
       grid-template-columns: 1fr 2fr 1fr;
       grid-template-areas:
@@ -48,8 +52,9 @@
 
 /* SIDEBAR */
 .sidebar-grid {
-  background-color: #e3caab;
+  background-color: $fondo-dos;
   margin-left: 1rem;
+  font-family:  $font-granola;
   ul {
     display: flex;
     flex-direction: column;
@@ -72,8 +77,14 @@
     grid-area: header;
     align-items: center;
     h1{
+      margin-bottom: 1rem;
+    }
+    h1 a{
+      font-family:  $font-granola;
+     text-decoration: none;
+     color: black;
      margin-bottom: 1rem;
-     text-shadow: 2px 3px rgb(165, 123, 68);
+     text-shadow: 2px 3px $fondo-dos;
      font-size: 2.5rem; 
      text-transform: uppercase;
      font-family: 'Times New Roman', Times, serif;
@@ -85,6 +96,7 @@
           padding-left: 1rem;
           padding-right: 1rem;
            list-style: none;
+           font-family:  $font-granola;
              a{
               text-decoration: none;
               color: white;
@@ -94,18 +106,18 @@
          }
 
 /* ANIMACIONES */
-header h1:hover{
-  background-color: #c6aa859c;
-  font-size: 41px;
+header h1 a:hover{
+  background-color: $fondo-dos;
+  font-size: 38px;
   box-shadow: 5px 5px;
   border-radius: 80px;
 }
 nav ul li:hover{
-  font-size: 18px;
+  font-size: 17px;
 }
 
 
-/* IMAGEN DE SECCION CONTENT */
+/* VIDA SANA   -   IMAGEN DE SECCION CONTENT */
 .image-content-wrapper {
   border-radius: 40px;
   position: relative;
@@ -113,12 +125,12 @@ nav ul li:hover{
   overflow: hidden;
 }
 .image-text {
-  text-align: left;
   font-size: 1.5rem;
   position: absolute;
   top: 0;
   padding: 15px;
-  color: rgb(88, 70, 47);
+  color: $color-uno;
+  background-color: rgba(73, 51, 24, 0.151);
 }
 .content-img {
   width: 100%;
@@ -132,23 +144,56 @@ nav ul li:hover{
   column-gap: normal;
   padding: 20px;
   font-size: 100%;
-  background-color: #e3caab;
+  background-color: $fondo-dos;
   border-radius: 5px;
 }
 
-
 .content h2 {
+  font-family:  $font-granola;
+  color: $color-uno;
   margin-top: 0; 
   margin-bottom: 1.5rem;
-  font-size: 1.8rem;
+  font-size: 2.5rem;  
   
 }
+.content p{
+  font-family: $font-granola;
+}
+.p-1{
+  flex: 50%;
+  padding: 2rem;
+  margin: 2rem;
+  border-style: groove;
+  mark{
+    background-color: $color-dos;
+  }
+}
+.p-2{
+  flex: 50%;
+  padding: 2rem;
+  margin: 2rem;
+  border-style: groove;
+  mark{
+    background-color: $color-dos;
+  }
+}
+.p-3{
+  flex: 50%;
+  padding: 2rem;
+  margin: 2rem;
+  border-style: groove;
+  mark{
+    background-color: $color-dos;
+  }
+}
+
+
 /* FOOTER */
 .footer-container {
   display: flex;
   justify-content: space-between;
   margin-left: 1rem;
-
+  font-family:  $font-granola;
   flex-wrap: nowrap;
 }
 
@@ -166,7 +211,7 @@ nav ul li:hover{
 }
 .header, 
 .footer{
-  background-color: #d4a66a;
+  background-color: $fondo-uno;
 }
 
 /*PRODUCTOS*/
@@ -177,12 +222,12 @@ table, th, th, td {
   text-align: center;
   width: 800px;
   height: 50px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   }
 
 .productos-lista{
   margin-top: 2rem;
-  color: rgb(14, 10, 10);
+  color: black;
   text-align: center;
 
   table{
@@ -193,11 +238,11 @@ table, th, th, td {
   .comprar{
     margin: 1rem;
     button{
-      background-color: #d1a4697b;
+      background-color: $fondo-uno;
     }
     a{
       padding: 0.5rem;
-      color: rgb(43, 0, 255);
+      color: $color-uno ;
       text-decoration: none;
     }
   }
@@ -252,7 +297,7 @@ div label{
   h2{
     text-align: center;
     border-style: solid;
-    background-color: rgb(182, 147, 64);
+    background-color: $fondo-cuatro;
     color: white;
   }
   p{
@@ -287,7 +332,7 @@ div label{
 }
 
 /*-----MQ tablet -----*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .header {
     flex-direction: column;
     justify-content: center;
@@ -297,15 +342,22 @@ div label{
     margin-left: 0%;
     margin-top: 0.5rem;
   }
+  .quienes-somos{
+    display: flex;
+    flex-direction: column;
+  }
 
 }
 
 /*----- MQ desktop ----- */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 801px) {
   .header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-
+  .sidebar-grid {
+  background-color: $fondo-dos;
+  margin-left: 1rem;
+  }
 }
