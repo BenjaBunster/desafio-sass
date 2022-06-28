@@ -316,31 +316,33 @@ div label{
  }
 
  /* FOOTER */
-.footer-container {
+
+.footer-container{
+  align-items: center;
   display: flex;
-  grid-template-columns: auto;
-  justify-content: space-between;
-  margin-left: 1rem;
-  font-family:  $font-granola;
-  flex-wrap: nowrap;
-  ul{
-    list-style: none;
+  flex-direction: column;
+  justify-content: center;
+  h2 a img{
+    object-fit: cover;
+    height: 60px;  
+    width: 100px;
+    margin-top: 1rem;
+    overflow: hidden;
+    transform: scale(1.5);
+  }
+  nav ul{
+    display: flex;
+    li{
+      justify-content: center;
+      list-style: none;
+      a img{
+      width: 30px;
+      height: 30px;
+      margin: 1rem;    
+      }     
+    }    
   }
 }
-
-
-.footer-logo-container {
-  height: 100px;  
-  width: 100px;
-  overflow: hidden;
-  transform: scale(1.5);
-}
-
-.footer-logo-container img {
-  object-fit: cover;
-  height: 100%;
-}
-
 .header, 
 .footer{
   background-color: $fondo-uno;
