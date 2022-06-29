@@ -3,6 +3,16 @@
   padding: 0;
   box-sizing: 0; }
 
+.titulo-somos {
+  font-size: 24px;
+  text-align: center;
+  padding: 1.5rem; }
+
+.productos-lista .comprar a {
+  padding: 0.5rem;
+  color: #442c1c;
+  text-decoration: none; }
+
 /*grid padre*/
 /*estructura grid*/
 .page-grid {
@@ -45,14 +55,16 @@ header {
   header h1 a img {
     text-align: center;
     margin: 0;
-    width: 8rem; }
+    width: 8rem;
+    overflow: auto; }
   header nav ul {
     display: flex; }
     header nav ul li {
       padding-left: 1rem;
       padding-right: 1rem;
       list-style: none;
-      font-family: "Courier New", Courier, monospace; }
+      font-family: "Courier New", Courier, monospace;
+      flex-wrap: nowrap; }
       header nav ul li a {
         text-decoration: none;
         color: white; }
@@ -98,7 +110,7 @@ nav ul li:hover {
   font-family: "Courier New", Courier, monospace;
   color: #442c1c;
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   text-align: center;
   font-size: 1.5rem; }
 
@@ -152,10 +164,6 @@ table, th, th, td {
     margin: 1rem; }
     .productos-lista .comprar button {
       background-color: #d4a66a; }
-    .productos-lista .comprar a {
-      padding: 0.5rem;
-      color: #442c1c;
-      text-decoration: none; }
 
 /*BOOTSTRAP*/
 .card-boot {
@@ -202,14 +210,15 @@ section .formulario {
   justify-content: center; }
 
 /* QUIENES SOMOS*/
-.titulo-somos :hover {
+.titulo-somos u:hover {
   font-size: 1.55rem;
-  text-shadow: auto black; }
+  text-shadow: auto white; }
 
 .titulo-somos {
-  font-size: 50px;
-  text-align: center;
-  padding: 1.5rem; }
+  text-align: center; }
+  .titulo-somos u {
+    font-size: 24px;
+    color: #442c1c; }
 
 .quienes-somos {
   display: flex;
@@ -281,6 +290,7 @@ section .formulario {
   .sidebar-grid {
     margin-left: 0%;
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     display: flex;
     flex-direction: row; }
   .quienes-somos {

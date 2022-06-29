@@ -8,6 +8,11 @@
 // VARIABLES 
 @import "utilities/variables";
 
+//mixin
+@import "utilities/mixin";
+
+//extend
+@import "utilities/extend";
 
 /*grid padre*/ /*estructura grid*/
 
@@ -70,6 +75,7 @@
       text-align: center;
       margin: 0;
       width: 8rem;
+      overflow: auto;
      }
     nav ul{
       display: flex;
@@ -78,6 +84,7 @@
           padding-right: 1rem;
            list-style: none;
            font-family:  $font-granola;
+           flex-wrap: nowrap;
              a{
               text-decoration: none;
               color: white;
@@ -89,7 +96,7 @@
 /* ANIMACIONES */
 header h1 img:hover{
   width: 9rem;
- 
+
 }
 nav ul li:hover{
   font-size: 17px;
@@ -133,7 +140,7 @@ nav ul li:hover{
   font-family:  $font-granola;
   color: $color-uno;
   margin-top: 0; 
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   text-align: center;
   font-size: 1.5rem;  
   
@@ -199,9 +206,7 @@ table, th, th, td {
       background-color: $fondo-uno;
     }
     a{
-      padding: 0.5rem;
-      color: $color-uno ;
-      text-decoration: none;
+      @extend %botones;
     }
   }
 }
@@ -259,15 +264,18 @@ div label{
 
  /* QUIENES SOMOS*/
 
- .titulo-somos :hover{
+ .titulo-somos u:hover{
   font-size: 1.55rem;
-  text-shadow: auto black;
+  text-shadow: auto white ;
  }
 
 .titulo-somos{
- font-size: 50px;
- text-align: center;
- padding: 1.5rem;
+  text-align: center;
+  u{
+    font-size: 24px;
+ color: $color-uno;
+  }
+
 } 
 
  .quienes-somos{
@@ -358,6 +366,7 @@ div label{
   .sidebar-grid{
     margin-left: 0%;
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     display: flex;
     flex-direction: row;
     

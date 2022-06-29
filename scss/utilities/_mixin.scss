@@ -1,0 +1,9 @@
+@mixin somos ($tamanoletra, $centro, $pad,) {
+  font-size: $tamanoletra;
+  text-align: $centro;
+  padding: $pad;
+}
+
+.titulo-somos{
+    @include somos (24px, center, 1.5rem)
+}
