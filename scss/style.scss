@@ -140,9 +140,10 @@ nav ul li:hover{
   font-family:  $font-granola;
   color: $color-uno;
   margin-top: 0; 
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   text-align: center;
   font-size: 1.5rem;  
+  
   
 }
 .content p{
@@ -376,6 +377,8 @@ div label{
     flex-direction: column;
   }
   .card-boot{
+   display: flex;
+   flex-direction: column;
    flex-flow: row wrap;  
   }
 
