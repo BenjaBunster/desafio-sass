@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    overflow-x: hidden;
+    
 }
 
 // VARIABLES 
@@ -46,6 +48,9 @@
     } 
  }  
 
+ main .sidebar-grid{
+  grid-area: sidebar;
+ }
 
 .content {
   grid-area: content;
@@ -319,7 +324,7 @@ div label{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  h2 a img{
+  a img{
     object-fit: cover;
     height: 60px;  
     width: 100px;

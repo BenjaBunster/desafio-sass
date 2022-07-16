@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0; }
+  box-sizing: 0;
+  overflow-x: hidden; }
 
 .titulo-somos {
   font-size: 24px;
@@ -31,6 +32,9 @@
   .page-grid {
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 'header header header' 'content content sidebar' 'footer footer footer'; } }
+
+main .sidebar-grid {
+  grid-area: sidebar; }
 
 .content {
   grid-area: content;
@@ -251,7 +255,7 @@ section .formulario {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  .footer-container h2 a img {
+  .footer-container a img {
     object-fit: cover;
     height: 60px;
     width: 100px;
