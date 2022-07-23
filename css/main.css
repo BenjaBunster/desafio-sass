@@ -289,6 +289,8 @@ section .formulario {
 @media screen and (max-width: 480px) {
   .nav1 {
     display: none; }
+  header h1 img:hover {
+    width: 8rem; }
   div.container-fluid {
     background-color: #d4a66a;
     padding: 0%; }
