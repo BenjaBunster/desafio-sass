@@ -3,8 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
-    overflow-x: hidden;
-    
 }
 
 // VARIABLES 
@@ -356,10 +354,11 @@ div label{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
   }
   .sidebar-grid{
     flex-direction: column;
-  }
+  }  
 }
 
 /*-----MQ tablet -----*/
