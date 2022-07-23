@@ -37,6 +37,9 @@
   }
 
 @media screen and (min-width: 801px) {
+    .navbar {
+      display: none;
+    }
     .page-grid {
       grid-template-columns: 1fr 2fr 1fr;
       grid-template-areas:
@@ -45,7 +48,7 @@
         'footer footer footer';
     } 
  }  
-
+ 
  main .sidebar-grid{
   grid-area: sidebar;
  }
@@ -80,6 +83,12 @@
       width: 8rem;
       overflow: auto;
      }
+     h2 a img{
+      text-align: center;
+      margin: 0;
+      width: 8rem;
+      overflow: auto;
+     }
     nav ul{
       display: flex;
          li{
@@ -99,7 +108,9 @@
 /* ANIMACIONES */
 header h1 img:hover{
   width: 9rem;
-
+}
+header h2 img:hover{
+  width: 9rem;
 }
 nav ul li:hover{
   font-size: 17px;
@@ -247,7 +258,6 @@ section {
 }
 fieldset{
   padding: 1.5rem;
-
 }
 section div{
   margin: 1rem;
@@ -350,19 +360,42 @@ div label{
 
  /*-----MQ MOBILE ----- aqui va el css de MOBILE*/
  @media screen and (max-width: 480px) {
-  .header {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
+   .nav1{
+    display: none;
+  } 
+  div.container-fluid{
+    background-color: $fondo-uno;
+    padding: 0%;
+  }
+  .navbar{
+    padding: 0%;
   }
   .sidebar-grid{
     flex-direction: column;
   }  
+  .sidebar-grid{
+    margin-left: 0%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .quienes-somos{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-boot{
+   display: flex;
+   flex-direction: column;
+   flex-flow: row wrap;  
+  }
 }
 
 /*-----MQ tablet -----*/
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .navbar {
+    display: none; }
   .header {
     flex-direction: column;
     justify-content: center;

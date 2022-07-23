@@ -20,7 +20,7 @@
    <!-- navigation -->
    <header class="grid-item header">
     <h1><a href="../index.html"><img src="../imagen/fondofondo.png" alt="logo1"></a></h1>
-    <nav>
+    <nav class="nav1">
         <ul>
             <li>
                 <a href="../index.html">INICIO</a>
@@ -35,6 +35,35 @@
                 <a href="contacto.html">CONTACTO</a>
             </li>
         </ul>
+    </nav>
+    <!-- Nav bootstrap -->
+    <nav class="navbar bg-light fixed-top">
+      <div class="container-fluid">
+          <h2><a href="index.html"><img src="../imagen/fondofondo.png" alt="logo1"></a></h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu LaGranola</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="quienes_somos.html">Somos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="vidaSana.html">Bienestar</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      </div>
     </nav>
 </header>
 
@@ -105,79 +134,76 @@
     </div>
     </div>
   </div>
-</div>
+ </div>
   <!--LISTA -->
   <div  class="productos-lista">
-  <h2>Productos</h2>
-      <table>
-          <tr>
-              <th>Producto</th>
-              <th>Precios</th>
-              <th>Cantidas</th>
-          </tr>
-          <tr>
-            <td>Nuez</td>
-            <td>$12.990</td>
-            <td>1kg</td>
+     <h2>Productos</h2>
+       <table>
+        <tr>
+           <th>Producto</th>
+           <th>Precios</th>
+           <th>Cantidas</th>
         </tr>
         <tr>
-              <td>Almendras</td>
-              <td>$12.990</td>
-              <td>1kg</td>
-          </tr>
-          
-          <tr>
-            <td>Pistachos</td>
-            <td>$16.990</td>
-            <td>1kg</td>
-        </tr>
-        
-          <tr>
-              <td>Catañas de caju</td>
-              <td>$18.990</td>
-              <td>1kg</td>
-          </tr>
-          <tr>
-            <td>Pasas</td>
-            <td>$10.990</td>
-            <td>1kg</td>
+           <td>Nuez</td>
+           <td>$12.990</td>
+           <td>1kg</td>
         </tr>
         <tr>
-          <td>Maní tostado</td>
-          <td>$6.990</td>
-          <td>1kg</td>
-      </tr>
+           <td>Almendras</td>
+           <td>$12.990</td>
+           <td>1kg</td>
+        </tr>
+        <tr>
+           <td>Pistachos</td>
+           <td>$16.990</td>
+           <td>1kg</td>
+        </tr>    
+        <tr>
+           <td>Catañas de caju</td>
+           <td>$18.990</td>
+           <td>1kg</td>
+        </tr> 
+        <tr>
+           <td>Pasas</td>
+           <td>$10.990</td>
+           <td>1kg</td>
+        </tr>
+        <tr>
+           <td>Maní tostado</td>
+           <td>$6.990</td>
+           <td>1kg</td>
+        </tr>
       </table>
       <div class="comprar">
         <button><a href="../paginas/contacto.html"> Comprar aqui </a></button>
       </div>
-     </div>
+   </div>
 </main>
-            <!-- footer -->
-            <footer class="grid-item footer">
-              <div class="footer-container">
-                  <a href="../index.html">
-                  <img src="../imagen/LOGOGRNOLA.png" alt="logo">
-                 </a>
-              <nav>
-              <ul>
-                  <li>
-                      <a href="https://www.instagram.com/benjabunster/" target="_blank"><img src="../imagen/footer/instagram.png" alt="logo instagram"></a>
-                  </li>
-                  <li>
-                      <a href="https://twitter.com/" target="_blank"><img src="../imagen/footer/twitter.png" alt="logo twitter"></a>
-                  </li>
-                  <li>
-                      <a href="https://www.facebook.com/" target="_blank"><img src="../imagen/footer/facebook.png" alt="logo facebook"></a>
-                  </li>
-                  <li>
-                      <a href="https://web.whatsapp.com/" target="_blank"><img src="../imagen/footer/whatsapp.png" alt="logo whatsapp"></a>
-                  </li>
-              </ul>
-             </nav>
-          </div>
-          </footer>
-
+  <!-- footer -->
+<footer class="grid-item footer">
+   <div class="footer-container">
+       <a href="../index.html">
+         <img src="../imagen/LOGOGRNOLA.png" alt="logo">
+       </a>
+       <nav>
+         <ul>
+           <li>
+             <a href="https://www.instagram.com/benjabunster/" target="_blank"><img src="../imagen/footer/instagram.png" alt="logo instagram"></a>
+           </li>
+           <li>
+             <a href="https://twitter.com/" target="_blank"><img src="../imagen/footer/twitter.png" alt="logo twitter"></a>
+           </li>
+           <li>
+             <a href="https://www.facebook.com/" target="_blank"><img src="../imagen/footer/facebook.png" alt="logo facebook"></a>
+           </li>
+           <li>
+             <a href="https://web.whatsapp.com/" target="_blank"><img src="../imagen/footer/whatsapp.png" alt="logo whatsapp"></a>
+           </li>
+         </ul>
+       </nav>
+   </div>
+</footer>
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

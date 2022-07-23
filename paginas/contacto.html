@@ -8,6 +8,8 @@
     <meta name="keywords" content="frutos, tienda, alimento, frutos secos, comida, granola, venta">
     <!-- META DESCRIPTION -->
     <meta name="description" content="Nuestra tienda se enfoca en la vida sana y buena alimentacón. Tiene como objetivo, poder ser asequible para todos y ayudar a integrar el alimento sano y natural a todos los hogares.">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     
      <!--MI CSS-->
     <link rel="stylesheet" href="../css/main.css">
@@ -17,7 +19,7 @@
 	 <!-- navigation -->
      <header class="grid-item header">
         <h1><a href="../index.html"><img src="../imagen/fondofondo.png" alt=""></a></h1>
-        <nav>
+         <nav class="nav1">
             <ul>
                 <li>
                     <a href="../index.html">INICIO</a>
@@ -33,16 +35,44 @@
                 </li>
                 
             </ul>
-        </nav>
-    </header>
+         </nav>
+         <!-- Nav bootstrap -->
+        <nav class="navbar bg-light fixed-top">
+            <div class="container-fluid">
+                <h2><a href="index.html"><img src="../imagen/fondofondo.png" alt="logo1"></a></h2>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu LaGranola</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="quienes_somos.html">Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="vidaSana.html">Bienestar</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+     </header>
     <!-- content -->
     <main>
-    <div class="grid-item content">
+      <div class="grid-item content">
         <section>
         <form action="" class="formulario">
             <fieldset>
-                <legend class="formulario__titulo"> Formulario de contacto</legend>
-    
+                <legend class="formulario-titulo"> Formulario de contacto</legend>
                 <div>
                     <label for="nombre">
                         Completa tu nombre_
@@ -56,22 +86,18 @@
                     </label>
                     <input type="text" name="telefono" placeholder="+569 42062593">    
                 </div>
-    
-    
                 <div>
                     <label for="correo">
                         correo electronico___
                     </label>
                     <input type="email" name="correo" placeholder="email" >
                 </div>
-
                  <div>
                     <label for="">__________</label>
                     <label for="comentario">                 </label>
                     <textarea name="Comentario" id="comentario" cols="30" rows="5" placeholder="mi pedido es de ....."></textarea>
                  </div>
-    
-                <div>
+                 <div>
                     <label for="pais">
                         selecciona tu pais___
                     </label>
@@ -79,25 +105,23 @@
                         <option value="chile">chile</option>
                         <option value="argentina">argentina</option>
                         <option value="brasil">brasil</option>
-                </div>
-
-                <div>
+                 </div>
+                 <div>
                     <input type="submit" value="enviar">
                     <input type="reset" value="borrar">
                 </div>
-                
-               </fieldset>
+            </fieldset>
           </form>
       </section>
     </div>
     </main>
-           <!-- footer -->
-           <footer class="grid-item footer">
-            <div class="footer-container">
-                <a href="../index.html">
+    <!-- footer -->
+     <footer class="grid-item footer">
+         <div class="footer-container">
+             <a href="../index.html">
                 <img src="../imagen/LOGOGRNOLA.png" alt="logo">
-               </a>
-            <nav>
+             </a>
+         <nav>
             <ul>
                 <li>
                     <a href="https://www.instagram.com/benjabunster/" target="_blank"><img src="../imagen/footer/instagram.png" alt="logo instagram"></a>
@@ -111,10 +135,11 @@
                 <li>
                     <a href="https://web.whatsapp.com/" target="_blank"><img src="../imagen/footer/whatsapp.png" alt="logo whatsapp"></a>
                 </li>
-            </ul>
-           </nav>
-        </div>
-        </footer>
-          
+             </ul>
+         </nav>
+         </div>
+     </footer>
+ <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>         
 </body>
 </html>
